@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*************************************/
+
+
+/************** LOADER CSS ***********/
+
+
+/*************************************/
+
+.loader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    z-index: 9999999999999;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.box {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-07 {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    position: relative;
+    font-size: 220px;
+}
+
+.loader-07:before,
+.loader-07:after {
+    content: '';
+    border: .2em solid #ff4f5a;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader-07 1s linear infinite;
+    animation: loader-07 1s linear infinite;
+    opacity: 0;
+}
+
+.loader-07:before {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.loader-07:after {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes loader-07 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes loader-07 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+/* Start NavBar  */
+
+.navbar {
+    background-color: #FFF !important;
+    padding: 20px 0px;
+    box-shadow: 1px 1px 15px #e1e1e1;
+}
+
+.navbar .navbar-nav li .nav-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: .4s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+    color: #ff4f5a;
+}
+
+
+/* End NavBar  */
+
+
+/* Start header  */
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.banner-sec {
+    background-color: #fcedee;
+    min-height: 500px;
+    border-bottom-left-radius: 28%;
+    padding: 150px 0;
+}
+
+.banner-sec .banner-details .banner-content {
+    width: 85%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.banner-sec .banner-details .banner-content .banner-heading {
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+.banner-sec .banner-details .banner-content .banner-heading span {
+    font-weight: 600;
+    color: #ff4f5a;
+}
+
+.banner-sec .banner-details .banner-content .banner-text {
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.banner-sec .banner-img img {
+    width: 100%;
+}
+
+.banner-sec .banner-details .banner-content .btn-banner {
+    color: #fff;
+    background-color: #1f1f1f;
+    font-size: 14px;
+    border: solid 1px #1f1f1f;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 10px 40px;
+    transition: .8s ease;
+}
+
+.banner-sec .banner-details .banner-content .btn-banner:hover {
+    color: #1f1f1f;
+    background-color: #fff;
+    border: solid 1px #fff;
+}
+
+
+/* End  header  */
+
+
+/* Start Services */
+
+.services-sec .services-details .sub-heading {
+    color: #ff4f5a;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.services-sec .services-details .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.services-sec .services-details .services-detail {
+    margin-bottom: 50px;
+    color: #1f1f1f;
+}
+
+.services-sec .our-services .s-cards {
+    transition: 0.8s ease;
+    padding: 50px;
+}
+
+.services-sec .our-services .s-cards .image-holder {
+    transition: 0.5s ease;
+}
+
+.services-sec .our-services .s-cards:hover .image-holder {
+    transform: translateY(-10px);
+}
+
+.services-sec .our-services .s-cards:hover .services-card-heading {
+    color: #ff4f5a;
+}
+
+.services-sec .our-services .s-cards:nth-child(even) {
+    border-left: solid 1px #e1e1e1;
+}
+
+.services-sec .our-services .s-cards:nth-child(1),
+.services-sec .our-services .s-cards:nth-child(2) {
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.services-sec .our-services .s-cards .image-holder i {
+    display: block;
+    color: #ff4f5a;
+    margin-bottom: 30px;
+}
+
+.services-sec .our-services .s-cards .services-card-heading {
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+
+/* End Services */
+
+
+/* Start AppClips */
+
+.app-clips {
+    padding: 150px 0;
+    background-image: url(../img/img2.jpg);
+}
+
+.app-clips .clips-details .sub-heading {
+    color: #ff4f5a;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.app-clips .clips-details .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.app-clips .clips-details .clips-detail {
+    margin-bottom: 50px;
+    color: #1f1f1f;
+}
+
+
+/* End AppClips */
+
+
+/* Start app  */
+
+.app-sec {
+    padding: 150px 0;
+}
+
+.app-sec .sub-heading {
+    color: #ff4f5a;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.app-sec .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.app-sec .detail-text {
+    margin-bottom: 50px;
+    color: #1f1f1f;
+}
+
+.app-sec .app-feature {
+    transition: 0.5s ease;
+}
+
+.app-sec .app-feature i {
+    display: block;
+    color: #ff4f5a;
+    margin-bottom: 30px;
+    transition: 0.5s ease;
+    font-size: 46px;
+}
+
+.app-sec .app-feature:hover i {
+    transform: translateY(-10px);
+}
+
+.app-feature h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.app-feature p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.app-image {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.app-image img {
+    max-width: 280px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#app-slider {
+    position: absolute;
+    top: 48%;
+    width: 235px;
+    left: 50%;
+    height: 420px;
+    transform: translate(-50%, -50%);
+}
+
+
+/* End app  */
+
+
+/* Start Get App  */
+
+.getApp-sec {
+    background: url(../img/banner2.jpg) center 39.0688px / cover no-repeat fixed;
+    padding: 100px 0;
+    position: relative;
+}
+
+.getApp-sec .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(251, 122, 130, 0.40);
+}
+
+.getApp-sec .sub-heading {
+    color: #1f1f1f;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.getApp-sec .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+.getApp-sec .detail-text {
+    margin-bottom: 50px;
+    color: #1f1f1f;
+}
+
+.getApp-sec .btn-banner {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1f1f1f;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: solid 1px #fff;
+    margin-right: 15px;
+    transition: .8s ease;
+}
+
+.get-app-sec .get-app-details .get-app-btn:last-child {
+    margin-right: 0;
+}
+
+.getApp-sec .btn-banner:hover {
+    color: #fff;
+    background-color: #1f1f1f;
+    border: solid 1px #1f1f1f;
+}
+
+
+/* End Get App  */
+
+.footer-sec {
+    padding: 100px 0;
+}
+
+.footer-sec a {
+    color: #1f1f1f;
+    transition: .8s ease;
+}
+
+.footer-sec a:focus,
+.footer-sec a:hover {
+    color: #ff4f5a;
+}
+
+
+/*===================================
+           Media Query
+=====================================*/
+
+@media (max-width: 575.98px) {
+    .navbar-nav {
+        margin-left: 20px !important;
+    }
+    .navbar-light .navbar-brand {
+        margin-left: 20px;
+    }
+    .navbar-light .navbar-toggler {
+        margin-right: 20px;
+    }
+    .banner-sec {
+        text-align: center;
+    }
+    .services-sec .our-services .s-cards:nth-child(1),
+    .services-sec .our-services .s-cards:nth-child(2) {
+        border-bottom: none;
+    }
+    .getApp-sec .btn-banner {
+        padding: 20px 50px;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-sec i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 991.99px) {
+    .getApp-sec .btn-banner {
+        padding: 20px 30px;
+    }
+}

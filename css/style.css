@@ -125,6 +125,13 @@ body {
     border-color: #FFF;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 /* Icon 1 */
 
@@ -192,7 +199,6 @@ body {
 
 .animated-icon1.open span:nth-child(2) {
     opacity: 0;
-    left: -60px;
 }
 
 .animated-icon1.open span:nth-child(3) {
